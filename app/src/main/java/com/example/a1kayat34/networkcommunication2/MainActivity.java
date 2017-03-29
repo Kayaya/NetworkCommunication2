@@ -20,7 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_song);
     }
 
 
@@ -68,9 +68,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
                     String response = "";
                     String line = br.readLine();
-                    while(line !=null)
+                    while(line !=null) {
                         response += line;
-                    line = br.readLine();
+                        line = br.readLine();
+                    }
                 }
 
             }
